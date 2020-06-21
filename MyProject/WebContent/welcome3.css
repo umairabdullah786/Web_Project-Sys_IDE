@@ -1,0 +1,186 @@
+body{
+	margin:0;
+	padding: 0;
+}
+
+.pageclass{
+	border:1px solid red;
+	margin:1px;
+}
+#container{
+	height:auto;
+	width:1240px;
+	border:1px solid red;
+	margin:10px auto;
+}
+#header{
+	height:100px;
+	width:1236px;
+}
+#logo{
+	height:96px;
+	width:96px;
+	float:left;
+}
+#logo p{
+	margin:40px 10px;
+	color:#204a87;
+	font-size:18px;
+	font-family:cursive;
+}
+#search{
+	height:96px;
+	width:930px;
+	float:left;
+}
+
+#search form ul{
+	padding:0;
+	margin:240px 120px;
+}
+#search form ul li{
+	display:inline;
+	margin-top:20px;
+	list-style: none;
+}
+.anch1{
+	height:25px;
+	width:150px;
+	border:1px solid rgb(0,0,0,0);
+	
+	color:#204a87;
+	font-size:20px;
+	font-family:verdana;
+}
+.anch1:hover{
+	text-decoration: underline;
+}
+#lii{
+	height:96px;
+	width:96px;
+	float:right;
+}
+#lii form ul{
+	padding:0;
+	margin:240px 120px;
+}
+#lii form ul li{
+	display:inline;
+	margin-top:15px;
+	list-style: none;
+}
+
+#lo{
+	height:96px;
+	width:96px;
+	float:right;
+}
+
+#lo form ul{
+	padding:0;
+	margin:240px 120px;
+}
+#lo form ul li{
+	display:inline;
+	margin-top:15px;
+	list-style: none;
+}
+.anch{
+	height:25px;
+	width:50px;
+	border:1px solid rgb(0,0,0,0);
+	
+	color:#204a87;
+	font-size:12px;
+	font-family:verdana;
+}
+.anch:hover{
+	text-decoration: underline;
+}
+#mainpanel{
+	height:490px;
+	width:1236px;
+}
+
+#leftpane{
+	height: 486px;
+	width: 739px;
+	float: left;
+}
+#leftpane p{
+	margin:40px 10px;
+	color:#204a87;
+	font-size:16px;
+	font-family:cursive;
+}
+#leftpane ul{
+	margin-left:60px;
+	padding:0;
+}
+#leftpane ul li{
+	display:inline;
+	margin-left:20px;
+	
+}
+.anchor{
+	text-decoration:none;
+	color:#204a87;
+	
+}
+.anchor:hover{
+	text-decoration:underline;
+	
+}
+
+	
+#login{
+	height:486px;
+	width:489px;
+	float:right;
+}
+#login form ul{
+	padding:0;
+	margin:240px 120px;
+}
+#login form ul li{
+	margin-top:15px;
+	list-style: none;
+}
+.headingtext{
+	color:#204a87;
+	font-size:20px;
+	font-family:verdana;
+}
+.ifield{
+	height:60px;
+	width:320px;
+	border:1px solid #babdb6;
+}
+.log{
+	height:25px;
+	width:185px;
+	border:1px solid #c5cce2;
+	background-color:#204a87;
+	color:#f1f1f1;
+	font-size:18px;
+	font-family:verdana;
+}
+#login p{
+	margin:25px 90px;
+	color:#204a87;
+	font-size:12px;
+	font-family:cursive;
+
+}
+	
+#footer{
+	height:100px;
+	width:1236px;
+}
+#footer p{
+	text-align: center;
+	margin-top:50px;
+	color:#204a87;
+	font-size:18px;
+	font-family:verdana;
+}

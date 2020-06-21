@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Welcome to MyPage</title>
+		<link href="welcome_3.css" rel="stylesheet" type="text/css" /> 
+	</head>
+	<body>
+		<div id="container">
+			<div id="header" class="pageclass">
+				<div id="logo" class="pageclass">
+					<p>Sharma ji</p>
+				</div><!-- End of logo -->
+				<div id="restofheader" class="pageclass">
+					<ul>
+						<li><a href="#" class="anch">Home</a></li>
+						<li><a href="#" class="anch">Who we are?</a></li>
+						<li><a href="#" class="anch">What we do?</a></li>
+						<li><a href="#" class="anch">Mail us</a></li>
+						<li><a href="#" class="anch">Enquiry</a></li>
+					</ul>
+				</div><!-- End of restofheader -->
+			</div><!-- End of header -->
+			<div id="mainpanel" class="pageclass">
+				<div id="leftpane" class="pageclass">
+					<form action="ms" method="post">
+						<ul>
+							<li class="headingtext">Please Login here:</li>
+							<li><input type="text" name="uname" placeholder="Username,Email-id,Phone no:" class="ifield" /></li>
+							<li><input type="password" name="pass" placeholder="Password:" class="ifield" /></li>
+							<li><input type="submit" value="Login" class="log" /></li>
+						</ul>
+					</form>
+				</div><!-- End of leftpane -->
+				<div id="contentarea" class="pageclass">
+                        <form action="register" method="post">
+						<ul class="formul">
+							<li class="headingtext">Please Register here:</li>
+							<li><input type="text" name="uname" placeholder="Username,Email-id,Phone no:" class="ifield" /></li>
+							<li><input type="password" name="pass" placeholder="Password:" class="ifield" /></li>
+                            <li class="ili">Gender:<input type="radio" name="gender" value="0"/>Male:<input type="radio" name="gender" value="1"/>female</li>
+                            <li class="ili">
+                                Hobbies:<input type="checkbox" name="hobbies" value="sports"/>sports
+                                <input type="checkbox" name="hobbies" value="music"/>music
+                                <input type="checkbox" name="hobbies" value="photo"/>photo
+                            </li>
+                            <li class="ili">
+                                DOB:<select name="date">
+                                <option value="1">01</option>
+                                <option value="2">01</option>
+                                <option value="3">01</option>
+                                <option value="4">01</option>
+                                
+                                </select>Date
+                                <select name="month">
+                                    <option value="1">january</option>
+                                    <option value="2">feb</option>
+                                    <option value="3">march</option>
+                                </select>Month
+                                <select name="year">
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                </select>Year
+                            </li>
+                            <li class="ili"><textarea name="comments" rows="5" cols="30"></textarea></li>
+                            <li class="ili"><input type="file" name="profilepic"/></li>
+							<li><input type="submit" value="please register here" class="log" /></li>
+						</ul>
+					</form>
+				</div><!-- End of contentarea -->
+			</div><!-- End of mainpanel -->
+			<div id="footer" class="pageclass">
+				<p>&copy; 2020 Youth of Integral (By Umair)</p>
+			</div><!-- End of footer -->
+		</div><!-- End of container -->
+	</body>
+</html>

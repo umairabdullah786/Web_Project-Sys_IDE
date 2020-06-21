@@ -1,0 +1,128 @@
+@charset "UTF-8";
+body{
+	margin:0;
+	padding:0;
+	
+	/*background-color:blue;*/
+}
+.pageclass{
+	border:1px solid rgb(0,0,0,0);<!-- for transparent background-->
+	margin:1px;
+}
+#container{
+	height:auto;
+	width:1240px;
+	border:1px solid rgb(0,0,0,0);
+	margin:10px auto;
+}
+#header{
+	height:100px;
+	width:1236px;
+}
+#logo{
+	height:96px;
+	width:96px;
+	float:left;
+}
+#logo p{
+	margin:40px 10px;
+	color:#204a87;
+	font-size:18px;
+	font-family:cursive;
+}
+#restofheader{
+	height:96px;
+	width:1132px;
+	float:right;
+}
+#restofheader ul{
+	margin-top:60px;
+	padding:0;
+}
+#restofheader ul li{
+	display:inline;
+	margin-left:20px;
+}
+.anch{
+	text-decoration:none;
+	color:#204a87;
+}
+.anch:hover{
+	text-decoration:underline;
+}
+#mainpanel{
+	height:700px;
+	width:1236px;
+}																/* Four types of selectors in CSS */
+#leftpane{														/* 1. Universal selector *{ backgroun-color:blue; } */
+	height:696px;												/* 2. Element Selector ul{ height:350px;}*/
+	width:400px;												/* 3. ID selector #leftpane{width:789px;} */
+	/*border:1px solid blue;*/										/* 4. Class selector .myclass{border:1px solid blue;}*/
+	/*margin:1px;*/													
+	float:left;
+	background-color:#f1f1f1;
+}
+#leftpane form ul{
+	padding:0;
+	margin:100px 70px;
+}
+#leftpane form ul li{
+	margin-top:20px;
+	list-style: none;
+}
+.formul{
+    padding:0px;
+    margin:100px 70px;
+}
+.ili{
+    margin-top:20px;
+    list-style:none;
+}
+.headingtext{
+	color:#204a87;
+	font-size:18px;
+	font-family:verdana;
+}
+.ifield{
+	height:30px;
+	width:250px;
+	border:1px solid #babdb6;
+    padding-bottom:25px; 
+}
+.ifield:hover{
+    color:green;
+}
+.log{
+	height:35px;
+	width:250px;
+	border:1px solid #c5cce2;
+	background-color:#204a87;
+	color:#f1f1f1;
+	font-size:18px;
+	font-family:verdana;
+}
+#contentarea{
+	height:696px;
+	width:828px;
+	float:right;
+    background-color:#f1f1f1;
+}
+#contentarea form ul{
+	padding:0;
+	margin:100px 70px;
+}
+#contentarea form ul li{
+	margin-top:20px;
+	list-style: none;
+}
+#footer{
+	height:100px;
+	width:1236px;
+}
+#footer p{
+	text-align: center;
+	margin-top:50px;
+	color:#204a87;
+	font-size:18px;
+	font-family:verdana;
+}

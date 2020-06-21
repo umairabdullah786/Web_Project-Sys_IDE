@@ -1,0 +1,24 @@
+@charset "UTF-8";
+body{
+	margin: 0;
+	padding: 0;
+	 /*background-color: red;*/
+}
+#container{
+	height: 600px;
+	width: 1240px;
+	border: 1px solid red;
+	margin: 10px auto;
+}
+#header{
+	height: 100px;
+	width: 1236px;
+	border: 1px solid red;
+	margin: 1px;
+}
+#hleftpane{
+	height: 100px;
+	width: 1236px;
+	border: 1px solid red;
+	margin: 1px;
+}

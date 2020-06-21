@@ -1,0 +1,132 @@
+@charset "UTF-8";
+body{
+	margin: 0;
+	padding: 0;
+	
+	/*background-color:red;*/ 
+}
+
+.pageclass{
+	border:1px solid red;
+	/*border:1px solid rgb(0,0,0,0);*/
+	margin: 1px;
+}
+
+#container{
+	height: auto;	/*size pixel me(600px) bhi likh sakte hai*/
+	width: 1240px;	
+	border: 1px solid rgb(0,0,0,0);
+	margin: 10px auto;
+}
+
+#header{
+	height: 100px;
+	width: 1236px;	
+	margin: 1px;
+}
+
+#logo{
+	height: 96px;
+	width: 96px;	
+	margin: 1px;
+	float: left;
+}
+
+#logo p{
+	margin: 40px 10px;
+	color: #201a87;
+	font-size: 16px;
+	font-family: cursive;
+}
+
+#restofheader{
+	height: 96px;
+	width: 1132px;	
+	margin: 1px;
+	float:right;
+}
+
+#restofheader ul{
+	margin-top: 60px;
+	padding: 0;
+}
+
+#restofheader ul li{
+	display: inline;
+	margin-left: 20px;
+}
+
+.anch{
+	text-decoration: none;
+	color: #201a87;
+}
+
+.anch:hover{
+	text-decoration: underline;
+}
+
+#mainpanel{
+	height: 390px;
+	width: 1236px;
+	
+	margin: 1px;
+}
+
+#leftpane{
+	height: 386px;
+	width: 400px;	
+	background-color:#f1f1f1;
+	float: left;
+}
+
+#leftpane form ul{
+	padding: 0;
+	margin: 100px 70px;
+}
+
+#leftpane form ul li{
+	margin-top: 20px;
+	list-style: none;
+}
+
+.headingtext{
+	color: #204a87;
+	font-size: 18p;
+	font-family: verdana;
+}
+
+.ifield{
+	height: 30px;
+	width: 250px;
+	border: 1px solid #babbd6;
+}
+
+.log{
+	height: 35px;
+	width: 250px;
+	border: 1px solid #c5cce2;
+	background-color: #204a87;
+	color: #f1f1f1;
+	font-size: 18px;
+	font-family: verdana;
+}
+
+#contentarea{
+	height: 386px;
+	width: 828px;	
+	float: right;
+}
+
+#footer{
+	height: 100px;
+	width: 1236px;	
+	margin: 1px;
+}
+
+#footer p{
+	text-align: center;
+	margin-top: 50px;
+	color: #204a87;
+	font-size: 18px;
+	font-family: verdana;
+}
