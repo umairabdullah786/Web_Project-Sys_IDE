@@ -2,9 +2,12 @@
 body{
 	margin:0;
 	padding:0;
-	
-	/*background-color:blue;*/
+	background: #babdb6/*background-color:blue;*/
 }
+li{
+	list-style: none;
+}
+
 .pageclass{
 	border:1px solid rgb(0,0,0,0);<!-- for transparent background-->
 	margin:1px;

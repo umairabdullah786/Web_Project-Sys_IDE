@@ -2,19 +2,22 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>MyProject</display-name>
   <servlet>
-  	<servlet-name>my</servlet-name>
-  	<servlet-class>mypkg.MyServlet</servlet-class>
+    <servlet-name>my</servlet-name>
+    <servlet-class>mypkg.MyServlet</servlet-class>
   </servlet>
- <servlet-mapping>
-	 <servlet-name>my</servlet-name>
- 	<url-pattern>/ms</url-pattern>
- </servlet-mapping> 
- <servlet>
-	<servlet-name>rs</servlet-name>
-	<servlet-class>mypkg.RegistrationServlet</servlet-class>
-</servlet>
-<servlet-mapping>
-	<servlet-name>rs</servlet-name>
-	<url-pattern>/register</url-pattern>
-</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>my</servlet-name>
+    <url-pattern>/ms</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>rs</servlet-name>
+    <servlet-class>mypkg.RegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>rs</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>Welcome.html</welcome-file>
+  </welcome-file-list>
 </web-app>

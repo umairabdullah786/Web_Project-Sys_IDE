@@ -24,7 +24,7 @@ public class RegistrationServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try{
 			PrintWriter out=response.getWriter();
-			String username=request.getParameter("uname");
+			String email=request.getParameter("email");
 			String password=request.getParameter("pass");
 			int gender=Integer.parseInt(request.getParameter("gender"));
 			String[] hobbies=request.getParameterValues("hobbies");
@@ -41,10 +41,20 @@ public class RegistrationServlet extends HttpServlet {
 			String why=request.getParameter("comments");
 			MyDao md=MyDao.getObject();
 			Statement st=md.getConnection();
-			String query_login="INSERT INTO login_table(username,password,status) VALUES('"+username+"','"+password+"',0)";
-			String query_user="INSERT INTO user_table(user_id,gender,hobbies,dob,description,username) VALUES(3003,'"+gender+"','"+sb.toString()+"','"+dob+"','"+why+"','"+username+"')";
+			String query_login="INSERT INTO login_table(username,password,status) VALUES('"+email+"','"+password+"',0)";
+//			String query_user="INSERT INTO user_table(user_id,gender,hobbies,dob,description,username) VALUES(3003,'"+gender+"','"+sb.toString()+"','"+dob+"','"+why+"','"+username+"')";
+			String max_userid="SELECT user_id FROM user_table ORDER BY user_id DESC LIMIT 1";
+			
 			st.execute(query_login);
+			ResultSet rs=st.executeQuery(max_userid);
+			int uid=0;
+			if(rs.next()) {
+				uid=rs.getInt("user_id");
+				uid++;
+			}
+			String query_user="INSERT INTO user_table(user_id,gender,hobbies,dob,description,username) VALUES('"+uid+"','"+gender+"','"+sb.toString()+"','"+dob+"','"+why+"','"+email+"')";
 			st.execute(query_user);
+			response.sendRedirect("Welcome.html");
 		}catch(Exception e) {
 			e.printStackTrace();
 		}

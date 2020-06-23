@@ -24,10 +24,10 @@
 			</div><!-- End of header -->
 			<div id="mainpanel" class="pageclass">
 				<div id="leftpane" class="pageclass">
-					<form action="ms" method="post">
+					<form action="login" method="post">
 						<ul>
 							<li class="headingtext">Please Login here:</li>
-							<li><input type="text" name="uname" placeholder="Username,Email-id,Phone no:" class="ifield" /></li>
+							<li><input type="text" name="email" placeholder="email" class="ifield" /></li>
 							<li><input type="password" name="pass" placeholder="Password:" class="ifield" /></li>
 							<li><input type="submit" value="Login" class="log" /></li>
 						</ul>
@@ -37,7 +37,7 @@
                         <form action="register" method="post">
 						<ul class="formul">
 							<li class="headingtext">Please Register here:</li>
-							<li><input type="text" name="uname" placeholder="Username,Email-id,Phone no:" class="ifield" /></li>
+							<li><input type="text" name="email" placeholder="Username,Email-id,Phone no:" class="ifield" /></li>
 							<li><input type="password" name="pass" placeholder="Password:" class="ifield" /></li>
                             <li class="ili">Gender:<input type="radio" name="gender" value="0"/>Male:<input type="radio" name="gender" value="1"/>female</li>
                             <li class="ili">
@@ -48,15 +48,15 @@
                             <li class="ili">
                                 DOB:<select name="date">
                                 <option value="1">01</option>
-                                <option value="2">01</option>
-                                <option value="3">01</option>
-                                <option value="4">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
                                 
                                 </select>Date
                                 <select name="month">
-                                    <option value="1">january</option>
-                                    <option value="2">feb</option>
-                                    <option value="3">march</option>
+                                    <option value="1">January</option>
+                                    <option value="2">Feb</option>
+                                    <option value="3">March</option>
                                 </select>Month
                                 <select name="year">
                                     <option value="2000">2000</option>
@@ -64,6 +64,7 @@
                                     <option value="2002">2002</option>
                                 </select>Year
                             </li>
+                            <li class="ili">Why you want to join us?</li>
                             <li class="ili"><textarea name="comments" rows="5" cols="30"></textarea></li>
                             <li class="ili"><input type="file" name="profilepic"/></li>
 							<li><input type="submit" value="please register here" class="log" /></li>
