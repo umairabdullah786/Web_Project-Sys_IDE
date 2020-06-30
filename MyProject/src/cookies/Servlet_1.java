@@ -33,10 +33,15 @@ public class Servlet_1 extends HttpServlet {
 		PrintWriter out=response.getWriter();
 		String faname=request.getParameter("faname");
 		String laname=request.getParameter("laname");
+		
+		//Cookies Method to get data in a text form to fetch data from 1 servlet to another servlet with transforming of data in entire parts(html).
+		
 		/*Cookie ck1=new Cookie("fn",faname);
 		Cookie ck2=new Cookie("ln",laname);
 		response.addCookie(ck1);
 		response.addCookie(ck2);*/
+		
+		//HttpSession Method to get data in a text form to fetch data b/w servlets without transforming of data in entire parts(html).  
 		
 		HttpSession session=request.getSession();
 		session.setAttribute("fn", faname);

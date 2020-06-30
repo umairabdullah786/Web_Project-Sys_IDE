@@ -34,9 +34,10 @@ public class Servlet_2 extends HttpServlet {
 		int age=Integer.parseInt(request.getParameter("age"));
 		String college=request.getParameter("college");
 		
-		//Cookies Method to get data in a text form to fetch data from 1 servlet to another 
-		
+		//Cookies Method to get data in a text form to fetch data from 1 servlet to another servlet with transforming of data in entire parts(html).
 		/*Cookie[] cka=request.getCookies();*/
+		
+		//HttpSession Method to get data in a text form to fetch data b/w servlets without transforming of data in entire parts(html).  
 		
 		HttpSession session=request.getSession(false);
 			
