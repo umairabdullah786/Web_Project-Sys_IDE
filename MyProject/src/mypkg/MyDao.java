@@ -1,6 +1,8 @@
 package mypkg;
 
 import java.sql.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
 public class MyDao {
 	Connection con=null;
 	Statement st=null;
@@ -12,11 +14,12 @@ public class MyDao {
 		}
 		return md;
 	}
-	public Statement getConnection()throws ClassNotFoundException,SQLException{
-		Class.forName("com.mysql.jdbc.Driver");
-		String url="jdbc:mysql://localhost:3306/myschema";
-		String username="root";
-		String password="Umair@786";
+	public Statement getConnection(HttpServletRequest request)throws ClassNotFoundException,SQLException{
+		String cname=request.getServletContext().getInitParameter("classname");
+		String url=request.getServletContext().getInitParameter("url");
+		String username=request.getServletContext().getInitParameter("username");
+		String password=request.getServletContext().getInitParameter("password");
+		Class.forName(cname);
 		con=DriverManager.getConnection(url, username, password);
 		st=con.createStatement();
 		return st;

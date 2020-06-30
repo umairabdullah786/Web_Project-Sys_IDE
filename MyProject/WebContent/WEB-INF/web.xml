@@ -2,6 +2,18 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>MyProject</display-name>
   <servlet>
+    <servlet-name>qw</servlet-name>
+    <servlet-class>serConfig_Context.ServConfig</servlet-class>
+    <init-param>
+      <param-name>city</param-name>
+      <param-value>Lucknow</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>qw</servlet-name>
+    <url-pattern>/sc</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <servlet-name>my</servlet-name>
     <servlet-class>mypkg.MyServlet</servlet-class>
   </servlet>
@@ -17,8 +29,27 @@
     <servlet-name>rs</servlet-name>
     <url-pattern>/register</url-pattern>
   </servlet-mapping>
+<!--   <context-param> -->
+<!--     <param-name>email</param-name> -->
+<!--     <param-value>jeetrainer@gmail.com</param-value> -->
+<!--   </context-param> -->
+   <context-param>
+    <param-name>classname</param-name>
+    <param-value>com.mysql.jdbc.Driver</param-value>
+  </context-param>
+   <context-param>
+    <param-name>url</param-name>
+    <param-value>jdbc:mysql://localhost:3306/myschema</param-value>
+  </context-param>
+   <context-param>
+    <param-name>username</param-name>
+    <param-value>root</param-value>
+  </context-param>
+   <context-param>
+    <param-name>password</param-name>
+    <param-value>Umair@786</param-value>
+  </context-param>
   <welcome-file-list>
-  	<welcome-file>indexCook.html</welcome-file>
-   <!--  <welcome-file>index_2.html</welcome-file> -->
+    <welcome-file>indexCook.html</welcome-file>
   </welcome-file-list>
 </web-app>

@@ -40,7 +40,7 @@ public class RegistrationServlet extends HttpServlet {
 			String dob=year+"-"+month+"-"+date;
 			String why=request.getParameter("comments");
 			MyDao md=MyDao.getObject();
-			Statement st=md.getConnection();
+			Statement st=md.getConnection(request);
 			String query_login="INSERT INTO login_table(username,password,status) VALUES('"+email+"','"+password+"',0)";
 //			String query_user="INSERT INTO user_table(user_id,gender,hobbies,dob,description,username) VALUES(3003,'"+gender+"','"+sb.toString()+"','"+dob+"','"+why+"','"+username+"')";
 			String max_userid="SELECT user_id FROM user_table ORDER BY user_id DESC LIMIT 1";

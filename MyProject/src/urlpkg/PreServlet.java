@@ -39,7 +39,7 @@ public class PreServlet extends HttpServlet {
 			out.println("<body>");
 			out.println("<ul>");
 			MyDao md=MyDao.getObject();
-			Statement st=md.getConnection();
+			Statement st=md.getConnection(request);
 			String query="SELECT uid,name FROM friends";
 			ResultSet rs=st.executeQuery(query);
 			while(rs.next()){

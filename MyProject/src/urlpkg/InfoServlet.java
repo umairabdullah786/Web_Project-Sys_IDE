@@ -40,7 +40,7 @@ public class InfoServlet extends HttpServlet {
 			out.println("<ul>");
 			int ui=Integer.parseInt(request.getParameter("uid"));
 			MyDao md=MyDao.getObject();
-			Statement st=md.getConnection();
+			Statement st=md.getConnection(request);
 			String query="SELECT name,hometown,age FROM friends WHERE(uid='"+ui+"')";
 			ResultSet rs=st.executeQuery(query);
 			if(rs.next()) {

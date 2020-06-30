@@ -1,8 +1,8 @@
-package mypkg;
+package serConfig_Context;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.*;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class LoginServlet
+ * Servlet implementation class Servl2
  */
-@WebServlet("/login")
-public class LoginServlet extends HttpServlet {
+@WebServlet("/sa")
+public class Servl2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginServlet() {
+    public Servl2() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -30,27 +30,12 @@ public class LoginServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
 			PrintWriter out=response.getWriter();
-			String email=request.getParameter("email");
-			String password=request.getParameter("pass");
-			MyDao md=MyDao.getObject();
-			Statement st=md.getConnection(request);
-			String query_getpass="SELECT status,password FROM login_table WHERE (username='"+email+"')";
-			ResultSet rs=st.executeQuery(query_getpass);
-			if(rs.next()) {
-				String passwordfromdb=rs.getString("password");
-				int stat=rs.getInt("status");
-				if(password.equals(passwordfromdb) && stat==1) {
-					out.println("Welcome "+email);
-				}else if(password.equals(passwordfromdb) && stat==0){
-					out.println("Email is not verifed!!");
-				}else {
-					out.println("Either email or password is wrong");
-				}
-			}else {
-				out.println("User does not exist");
-			}
-				
-		}catch(Exception e) {
+			out.println("Response from Servlet 2");
+			out.println(getServletContext().getInitParameter("email"));
+//			String na=request.getAttribute("name").toString();
+//			out.println(na);
+			
+		}catch(Exception e){
 			e.printStackTrace();
 		}
 	}
